@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Assets/style/style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- navbar -->
+    <nav class="bg-white shadow-md w-full">
+      <div
+        class="mx-auto px-4 py-10 flex justify-between items-center max-w-[1232px]"
+      >
+        <div class="text-[34px] font-bold text-[#054C73] mr-2">Furniture</div>
+        <div class="hidden md:flex items-center justify-between gap-[70px]">
+          <a
+            href="#"
+            class="text-[#333333] font-semibold text-[14px] hover:text-[#054C73]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-[#333333] font-semibold text-[14px] hover:text-[#054C73]"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-[#333333] font-semibold text-[14px] hover:text-[#054C73]"
+            >Doctors</a
+          >
+          <a
+            href="#"
+            class="text-[#333333] font-semibold text-[14px] hover:text-[#054C73]"
+            >Products</a
+          >
+          <a
+            href="#"
+            class="text-[#333333] font-semibold text-[14px] hover:text-[#054C73]"
+            >Gallery</a
+          >
+        </div>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            class="w-10 h-10 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Sidebar (Mobile) -->
+    <div
+      id="sidebar"
+      class="fixed inset-y-0 left-0 bg-white w-64 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <div class="py-4">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Services</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Doctors</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Products</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Gallery</a
+        >
+      </div>
+    </div>
+    <div>
+      <!-- Hero-section -->
+      <div
+        class="bg-[url(/Assets/img/hero-section-img.png)] bg-no-repeat bg-center bg-cover"
+      >
+        <div
+          class="max-w-[675px] w-full ml-auto px-4 flex items-center justify-center lg:py-[153px] md:py-[100px] py-[70px] md:pr-[90px] sm:pr-[50px] pr-[25px]"
+        >
+          <div
+            class="max-w-[643px] w-full ml-auto rounded-[10px] bg-[#DFE9F4] md:p-[37px_45px_41px_39px] p-[28px_35px_31px_25px]"
+          >
+            <p class="text-[#333333] font-semibold tracking-[3px]">
+              New Arrival
+            </p>
+            <p
+              class="max-w-[559px] w-full md:text-[52px] sm:text-[30px] text-[22px] text-[#054C73] font-bold leading-[125%] my-5"
+            >
+              Discover Our New Collection
+            </p>
+            <p
+              class="max-w-[546px] w-full md:text-[18px] sm:text-[15px] text-[13px] font-medium text-[#333333] md:leading-[216%] mb-[30px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button
+              class="md:max-w-[229px] max-w-[180px] mx-auto w-full bg-[#054C73] rounded-[50px] md:py-6 py-4 px-4 hover:bg-transparent duration-300 border border-[#054C73] hover:text-[#054C73] text-white font-bold uppercase"
+            >
+              BUY Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Hero-section-next -->
+      <div class="bg-[#F2F5FF]">
+        <div
+          class="max-w-[1252px] w-full mx-auto px-4 md:py-[50px] sm:py-[30px] py-[15px]"
+        >
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-3 gap-y-7">
+            <div class="flex items-center gap-7 mx-auto cursor-pointer">
+              <img src="/Assets/svg/hero-icon1.svg" alt="" />
+              <div>
+                <p
+                  class="text-[#333333] sm:text-[24px] text-[20px] font-semibold"
+                >
+                  Free Delivery
+                </p>
+                <p class="text-[#333333] mt-[6px] max-sm:text-[14px]">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-7 mx-auto cursor-pointer">
+              <img src="/Assets/svg/hero-icon2.svg" alt="" />
+              <div>
+                <p
+                  class="text-[#333333] sm:text-[24px] text-[20px] font-semibold"
+                >
+                  Support 24/7
+                </p>
+                <p class="text-[#333333] mt-[6px] max-sm:text-[14px]">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-7 mx-auto cursor-pointer">
+              <img src="/Assets/svg/hero-icon3.svg" alt="" />
+              <div>
+                <p
+                  class="text-[#333333] sm:text-[24px] text-[20px] font-semibold"
+                >
+                  100% Authentic
+                </p>
+                <p class="text-[#333333] mt-[6px] max-sm:text-[14px]">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inspiration Collection -->
+      <div class="bg-[#FCFCFC]">
+        <div
+          class="max-w-[1177px] w-full mx-auto px-4 md:py-[60px] sm:py-[40px] py-[30px]"
+        >
+          <div class="md:mb-[80px] sm:mb-[50px] mb-[30px]">
+            <p
+              class="text-[#333333] md:text-[32px] text-[24px] font-bold text-center"
+            >
+              Inspiration Collection
+            </p>
+            <p
+              class="sm:mt-5 mt-3 md:max-w-[559px] max-w-[650px] w-full mx-auto text-center text-[#666666] md:text-[20px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-[40px]">
+            <img
+              class="xl:max-w-[355px] max-w-[300px] w-full mx-auto"
+              src="/Assets/img/inspiration-img-1.png"
+              alt=""
+            />
+            <img
+              class="xl:max-w-[355px] max-w-[300px] w-full mx-auto"
+              src="/Assets/img/inspiration-img-2.png"
+              alt=""
+            />
+            <img
+              class="xl:max-w-[355px] max-w-[300px] w-full mx-auto"
+              src="/Assets/img/inspiration-img-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Beautify Your Space -->
+      <div class="bg-[#F2F5FF]">
+        <div
+          class="max-w-[1176px] w-full mx-auto px-4 pb-[26px] md:pt-[60px] sm:pt-[40px] pt-[30px]"
+        >
+          <div
+            class="flex items-center justify-between lg:gap-3 gap-6 max-lg:flex-col"
+          >
+            <div>
+              <p class="sm:text-[32px] text-[25px] font-bold text-[#333333]">
+                Beautify Your Space
+              </p>
+              <p
+                class="md:leading-[195%] text-[#666666] md:text-[20px] max-sm:text-[13px] max-w-[514px] w-full mt-[20px] mb-[30px]"
+              >
+                Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+              <button
+                class="md:max-w-[229px] max-w-[180px] mx-auto w-full bg-[#054C73] rounded-[50px] md:py-6 py-4 px-4 hover:bg-transparent duration-300 border border-[#054C73] hover:text-[#054C73] text-white font-bold uppercase"
+              >
+                Learn More
+              </button>
+            </div>
+            <div>
+              <img src="/Assets/img/beauty-img-1.png" alt="beauty-img-1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Browse The Range -->
+      <div class="bg-[#FCFCFC]">
+        <div
+          class="max-w-[1209px] w-full mx-auto px-4 md:py-[60px] sm:py-[45px] py-[30px]"
+        >
+          <div class="md:pb-[36px] pb-6">
+            <p
+              class="text-[#333333] md:text-[32px] text-[24px] font-bold text-center"
+            >
+              Browse The Range
+            </p>
+            <p
+              class="sm:mt-5 mt-3 md:max-w-[559px] max-w-[650px] w-full mx-auto text-center text-[#666666] md:text-[20px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-[20px]">
+            <div class="flex mx-auto flex-col">
+              <img src="/Assets/img/Browse-img-1.png" alt="" />
+              <p
+                class="text-[#333333] font-semibold text-center text-[24px] md:mt-[30px] mt-[15px]"
+              >
+                Dining
+              </p>
+            </div>
+            <div class="flex mx-auto flex-col">
+              <img src="/Assets/img/Browse-img-2.png" alt="" />
+              <p
+                class="text-[#333333] font-semibold text-center text-[24px] md:mt-[30px] mt-[15px]"
+              >
+                Living
+              </p>
+            </div>
+            <div class="flex mx-auto flex-col">
+              <img src="/Assets/img/Browse-img-3.png" alt="" />
+              <p
+                class="text-[#333333] font-semibold text-center text-[24px] md:mt-[30px] mt-[15px]"
+              >
+                Bedroom
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- How It Works -->
+      <div
+        class="max-w-[1216px] w-full mx-auto px-4 pt-[60px] lg:pb-[200px] md:pb-[150px] sm:pb-[100px] pb-[60px]"
+      >
+        <div class="md:pb-[50px] sm:pb-8 pb-5">
+          <p
+            class="text-[#333333] md:text-[32px] text-[24px] font-bold text-center"
+          >
+            How It Works
+          </p>
+          <p
+            class="sm:mt-5 mt-3 md:max-w-[559px] max-w-[650px] w-full mx-auto text-center text-[#666666] md:text-[20px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 mx-auto gap-5">
+          <div class="mx-auto">
+            <img
+              src="/Assets/img/how-it-work-img-1.png"
+              alt="how-it-work-img-1.png"
+            />
+            <div>
+              <p
+                class="text-[#333333] font-bold text-[24px] text-center md:mt-[75px] sm:mt-[50px] mt-[25px] mb-[10px]"
+              >
+                Purchase Securely
+              </p>
+              <p
+                class="text-[#666666] leading-[155%] text-[18px] max-w-[381px] w-full mx-auto text-center"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <img
+              src="/Assets/img/how-it-work-img-2.png"
+              alt="how-it-work-img-2.png"
+            />
+            <div>
+              <p
+                class="text-[#333333] font-bold text-[24px] text-center md:mt-[75px] sm:mt-[50px] mt-[25px] mb-[10px]"
+              >
+                Ships From Warehouse
+              </p>
+              <p
+                class="text-[#666666] leading-[155%] text-[18px] max-w-[381px] w-full mx-auto text-center"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <img
+              src="/Assets/img/how-it-work-img-3.png"
+              alt="how-it-work-img-3.png"
+            />
+            <div>
+              <p
+                class="text-[#333333] font-bold text-[24px] text-center md:mt-[75px] sm:mt-[50px] mt-[25px] mb-[10px]"
+              >
+                Style Your Room
+              </p>
+              <p
+                class="text-[#666666] leading-[155%] text-[18px] max-w-[381px] w-full mx-auto text-center"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Join Our Mailing List -->
+      <div class="bg-[#F2F5FF]">
+        <div class="max-w-[576px] w-full mx-auto px-4 py-[60px]">
+          <div>
+            <p
+              class="text-center text-[#333333] text-[32px] font-bold mb-[10px]"
+            >
+              Join Our Mailing List
+            </p>
+            <p
+              class="max-w-[514px] w-full mx-auto text-center text-[20px] text-[#666666] leading-[195%] mb-[50px]"
+            >
+              Sign up to receive inspiration, product updates, and special
+              offers from our team.
+            </p>
+            <div
+              class="max-w-[486px] w-full mx-auto flex items-center justify-center bg-white border border-[#054C73] rounded-[3px] max-sm:flex-col"
+            >
+              <input
+                type="text"
+                placeholder="example@gmail.com"
+                class="sm:max-w-[333px] w-full p-[25px_10px_25px_25px] outline-none"
+              />
+              <button
+                class="bg-[#054C73] sm:max-w-[153px] w-full py-[26px] sm:h-[74px] border border-[#011C42] rounded-[3px] text-white font-bold leading-[110%] duration-300 hover:bg-transparent hover:text-[#054C73]"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="bg-[#03344F]">
+        <div
+          class="max-w-[1218px] w-full mx-auto px-4 md:pt-[50px] py-[30px] md:pb-[90px] sm:pb-[50px]"
+        >
+          <div
+            class="flex items-center justify-between max-lg:flex-col max-lg:gap-4"
+          >
+            <div>
+              <p class="text-white font-bold text-[24px]">Beauty Care</p>
+              <p
+                class="text-white md:leading-[218%] max-w-[400px] w-full md:mb-[21px] mb-[15px] md:mt-[34px] mt-[20px] max-sm:text-[13px]"
+              >
+                Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+              <p class="text-white font-bold text-[24px]">Follow Us</p>
+            </div>
+            <div>
+              <p
+                class="text-white font-bold sm:text-[24px] text-[20px] mb-[23px]"
+              >
+                Instagram Shop
+              </p>
+              <div class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5">
+                <img
+                  src="/Assets/img/footer-img-1.png"
+                  alt="footer-img-1.png"
+                />
+                <img
+                  src="/Assets/img/footer-img-2.png"
+                  alt="footer-img-2.png"
+                />
+                <img
+                  src="/Assets/img/footer-img-3.png"
+                  alt="footer-img-3.png"
+                />
+                <img
+                  src="/Assets/img/footer-img-4.png"
+                  alt="footer-img-4.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const sidebar = document.getElementById("sidebar");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+      });
+    </script>
+  </body>
+</html>
